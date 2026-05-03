@@ -1,0 +1,27 @@
+{
+  "experiment_name": "MegaMergeSmallObjects",
+  "raw_dataset_dir": "/home/inatel-ubuntu-ia/datasets/MegaMerge",
+  "clean_dataset_dir": "/home/inatel-ubuntu-ia/datasets/MegaMergeSmallObjects_clean",
+  "output_dir": "/home/inatel-ubuntu-ia/tomato_train/outputs/MegaMergeSmallObjects",
+  "cfg_path": "/home/inatel-ubuntu-ia/venvs/d2/lib/python3.12/site-packages/detectron2/model_zoo/configs/COCO-Detection/retinanet_R_50_FPN_1x.yaml",
+  "train_json": "/home/inatel-ubuntu-ia/datasets/MegaMergeSmallObjects_clean/train/_annotations.coco.json",
+  "valid_json": "/home/inatel-ubuntu-ia/datasets/MegaMergeSmallObjects_clean/valid/_annotations.coco.json",
+  "test_json": "/home/inatel-ubuntu-ia/datasets/MegaMergeSmallObjects_clean/test/_annotations.coco.json",
+  "target_class_name": "cherry_tomato",
+  "keep_empty_images_in_clean_dataset": true,
+  "filter_empty_annotations": false,
+  "high_res": true,
+  "ims_per_batch": 2,
+  "base_lr": 5e-05,
+  "max_iter": 24000,
+  "steps": [
+    16000,
+    20000
+  ],
+  "num_workers": 4,
+  "num_classes": 1,
+  "min_size_train": 1152,
+  "max_size_train": 1536,
+  "min_size_test": 1152,
+  "max_size_test": 1536
+}
